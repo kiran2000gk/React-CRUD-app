@@ -1,0 +1,41 @@
+install
+
+yarn add bootstrap jquery popper.js
+yarn add react-router-dom
+yarn add json-server
+yarn add axios
+
+create one db.json file
+outside the src 
+
+inside (json/users) data from website
+
+json-server --watch db.json
+
+so in package.json
+-> script
+-> after start
+-> put  "json-server": "json-server --watch db.json",
+
+now starting two server 
+one----react ---- yarn start -----  port 3000
+two -----json ----- npm run json-server ----- port 3001
+seperately terminals
+
+or else add 
+
+yarn add concurrently
+
+then in package.json script 
+
+script block 
+
+add
+
+"start:dev": "concurrently \"command1 srg\" \"command2 arg\"
+
+
+"start:dev": "concurrently \"yarn start\" \"npm run json-server\"
+
+
+next axios

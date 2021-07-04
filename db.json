@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "name": "hello",
+      "username": "hello",
+      "email": "hello@gmail.com",
+      "phone": "7795282824",
+      "website": "jjfao",
+      "id": 1
+    }
+  ]
+}
